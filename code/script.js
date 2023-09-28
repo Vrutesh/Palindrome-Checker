@@ -1,26 +1,26 @@
-// function isPalindrome(text) {
-//     text = text.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
-//     var len = text.length;
+function isPalindrome(text) {
+    text = text.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+    var len = text.length;
     
-//     for (var i = 0; i < len / 2; i++) {
-//         if (text[i] !== text[len - 1 - i]) {
-//             return false;
-//         }
-//     }
+    for (var i = 0; i < len / 2; i++) {
+        if (text[i] !== text[len - 1 - i]) {
+            return false;
+        }
+    }
     
-//     return true;
-// }
+    return true;
+}
 
-// function checkPalindrome() {
-//     var inputText = document.getElementById("inputText").value;
-//     var result = document.getElementById("result");
+function checkPalindrome() {
+    var inputText = document.getElementById("inputText").value;
+    var result = document.getElementById("result");
 
-//     if (isPalindrome(inputText)) {
-//         result.innerText ='"' + inputText + '"is a palindrome!';
-//     } else {
-//         result.innerText = '"' + inputText + '"is not a palindrome.';
-//     }
-// }
+    if (isPalindrome(inputText)) {
+        result.innerText ='"' + inputText + '"is a palindrome!';
+    } else {
+        result.innerText = '"' + inputText + '"is not a palindrome.';
+    }
+}
 
 
 // let arr=[1,2,3,4,5,6,7,8,9,10]
